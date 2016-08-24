@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Bulk Record Assigner")]
 [assembly: AssemblyDescription("Uhhh... It assigns records in bulk.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Adaptable Consulting Limited")]
+[assembly: AssemblyCompany("Ryan James, Adaptable Consulting")]
 [assembly: AssemblyProduct("ACL.XrmToolBox.BulkRecordAssigner")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.2016.9.5")]
-[assembly: AssemblyFileVersion("1.2016.9.5")]
+[assembly: AssemblyVersion("1.2016.9.6")]
+[assembly: AssemblyFileVersion("1.2016.9.6")]
