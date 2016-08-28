@@ -43,7 +43,7 @@ namespace ACL.XrmToolBox.BulkRecordAssigner.Helpers
 
 
         /// <summary>
-        ///     Gets all active system users.
+        ///     Retrieve all system users.
         /// </summary>
         /// <param name="service">The organization service.</param>
         /// <returns>List of entities of system user.</returns>
@@ -53,17 +53,11 @@ namespace ACL.XrmToolBox.BulkRecordAssigner.Helpers
             {
                 ColumnSet = new ColumnSet(
                     "domainname",
-                    "fullname"),
-                Criteria = new FilterExpression
-                {
-                    Conditions =
-                    {
-                        new ConditionExpression("isdisabled", ConditionOperator.Equal, false)
-                    }
-                },
+                    "fullname",
+                    "isdisabled"),
                 Orders =
                 {
-                    new OrderExpression("domainname", OrderType.Ascending)
+                    new OrderExpression("fullname", OrderType.Ascending)
                 },
             };
 
@@ -74,7 +68,7 @@ namespace ACL.XrmToolBox.BulkRecordAssigner.Helpers
         }
 
         /// <summary>
-        ///     Gets all active teams.
+        ///     Retrieve all ownership teams.
         /// </summary>
         /// <param name="service">The organization service.</param>
         /// <returns>List team combo box items.</returns>

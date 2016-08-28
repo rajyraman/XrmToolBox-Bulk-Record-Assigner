@@ -23,7 +23,15 @@ namespace ACL.XrmToolBox.BulkRecordAssigner.Models
 
         public override string ToString()
         {
-            return user.GetAttributeValue<string>("fullname");
+            var name = user.GetAttributeValue<string>("fullname");
+            var disabled = user.GetAttributeValue<bool>("isdisabled");
+
+            if (disabled)
+            {
+                name += " (Disabled)";
+            }
+
+            return name;
         }
     }
 }
